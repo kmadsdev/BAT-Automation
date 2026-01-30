@@ -1,35 +1,34 @@
-# Bearer Auth Token Automation (BAT)
+# Bearer Authorizaton Token - Automation
+Picks the authorization token from QA, and throw at your `.env` file and to Postman, so you don't have to.
 
-## Initial setup
-### Extract this repository into you project folder
+### Step 0. Extract this repository into you project folder (or just `/scritps` 'cause that's all you need anyway)
 ```
-git clone ...
+git clone https://github.com/kmadsdev/BAT-Automation.git
 ```
 
-### set the global variable `get-bearer-auth`
+### Step 1. Move the `/scripts/` to you repository's root (or on the same location as your `.env`)
+
+### Step 2. Set the global variable `get-bearer-auth`
 ```sh
 ./scripts/install-get-bearer-auth-alias.sh
 ```
+> Whenever you need to update the bearer auth token you just type this: `get-bearer-auth`
 
-## Usage
-### 1. Run the server (exported to http://localhost:3030/token)
+### Step 3. Run the token server
 Updates based on the `.env` activity
 ```sh
 node scripts/token-server.mjs
 ```
+> This server will export your Bearer token to [http://localhost:3030/token](http://localhost:3030/token)
 
-### 2. Get the Bearer auth token
+### Step 4. Renew your token
 ```sh
 get-bearer-auth
 ```
-> The token will be updated on the `.env` file as `AUTHORIZATION`.
+> Your token will be updated on the `.env` file as `AUTHORIZATION`.
+> Everytime you need to get another code, just re-run the command.
 
-### 3. Set the scripts to postman
-In collectons or on each request set the scripts:
-- pre-request.js
-- post-response.js (optional)
-
-
-
-
-
+### Step 5. Setup Postman to get the auth token automaticall
+In collectons or on each request set the scripts from each file:
+- [/Postman/pre-request.js](/Postman/pre-request.js) (mandatory)
+- [/Postman/post-response.js](/Postman/post-response.js) (optional)

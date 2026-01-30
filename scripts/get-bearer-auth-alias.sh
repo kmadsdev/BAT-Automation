@@ -33,11 +33,9 @@ if [[ -f "$RC_FILE" ]]; then
             }
         ' "$RC_FILE" > "$tmpfile"
         mv "$tmpfile" "$RC_FILE"
-    else
-        printf '\n# added by ms-picpay-hr-survey-orchestrator\n%s\n' "$ALIAS_CMD" >> "$RC_FILE"
     fi
 else
     printf '%s\n' "$ALIAS_CMD" >> "$RC_FILE"
 fi
 
-echo "Alias instalado em $RC_FILE. Rode: source $RC_FILE"
+echo "Alias installed in $RC_FILE. Rode: source $RC_FILE"
