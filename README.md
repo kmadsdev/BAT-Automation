@@ -1,5 +1,5 @@
 # Bearer Authorizaton Token - Automation
-Picks the authorization token from QA, and throw at your `.env` file and to Postman, so you don't have to.
+Picks the authorization token from QA, and throw at your `.env` file and to Postman, so your lazy ahh don't have to.
 
 
 <br><br>
@@ -73,7 +73,9 @@ In `collections` or on each request's `script` page, set the following scripts:
 Don't thank me, thank the science
 
 
-<br><br><br><br><br>
+<br><br>
+  <br>
+<br><br>
 
 
 # BIG SPOILER:
@@ -84,7 +86,5 @@ Don't thank me, thank the science
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <img src="ignore/spoiler.jpeg" alt="if the image didn't loaded or you don't get it, it's just a car with a big spoiler wing, that's the joke." style="width: 100%; height: auto;">
-
-<br><br>
 
 [Me](https://kmads.dev/)

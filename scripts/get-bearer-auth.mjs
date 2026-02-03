@@ -21,7 +21,7 @@ const SNAPSHOT_MODE = (process.env.CHROME_PROFILE_SNAPSHOT ?? 'auto').toLowerCas
 
 function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
-}get-be
+}
 
 function shouldUseSnapshot(isRunning) {
     if (SNAPSHOT_MODE === 'always') {
