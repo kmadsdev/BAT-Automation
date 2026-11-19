@@ -1,4 +1,4 @@
-# Bearer Authorizaton Token - Automation
+# Bearer Authorization Token - Automation
 Picks the authorization token from QA, and throw at your `.env` file and to Postman, so your lazy ahh don't have to.
 
 
@@ -6,7 +6,7 @@ Picks the authorization token from QA, and throw at your `.env` file and to Post
 
 
 # Step 0. Extract this repository into you project folder
-Or just `/scritps` 'cause that's all you need anyway
+Or just `/scripts` 'cause that's all you need anyway
 ```
 git clone https://github.com/kmadsdev/BAT-Automation.git
 ```
